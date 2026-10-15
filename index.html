@@ -3,80 +3,600 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Maya Reynolds, PsyD | Anxiety & Burnout Therapist Santa Monica</title>
-    <link href="https://googleapis.com" rel="stylesheet">
+
+    <title>Dr. Maya Reynolds, PsyD | Anxiety &amp; Burnout Therapist Santa Monica</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <style>
-        /* BALANCED PROFESSIONAL BEIGE & MUTED SLATE PALETTE */
-        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', sans-serif; }
-        html { scroll-behavior: smooth; }
-        body { background-color: #F6F4EE; color: #2C3531; line-height: 1.7; -webkit-font-smoothing: antialiased; }
-        
-        .container { max-width: 1140px; margin: 0 auto; padding: 0 28px; width: 100%; }
-        
-        /* Floating Navbar */
-        nav { background: #FAF9F5; border-bottom: 1px solid #E5E0D5; height: 90px; display: flex; align-items: center; position: sticky; top: 0; z-index: 100; }
-        .nav-box { display: flex; justify-content: space-between; align-items: center; width: 100%; }
-        .logo { font-size: 20px; font-weight: 700; text-decoration: none; color: #2C3531; letter-spacing: -0.5px; }
-        .logo span { color: #8F9D94; font-weight: 400; }
-        .menu a { text-decoration: none; color: #505B56; margin-left: 32px; font-size: 15px; font-weight: 500; transition: all 0.3s ease; }
-        .menu a:hover { color: #8F9D94; }
-        .btn-nav { background: #2C3531; color: #ffffff !important; padding: 12px 24px; border-radius: 6px; font-weight: 600; font-size: 14.5px; }
-        .btn-nav:hover { background: #404B46; }
+        /* ORIGINAL BEIGE & MUTED SLATE PALETTE */
 
-        /* Hero Module */
-        header { background: #FAF9F5; padding: 110px 0; border-bottom: 1px solid #E5E0D5; }
-        .grid-2 { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 64px; align-items: center; }
-        .lbl { color: #8F9D94; font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 14px; display: inline-block; }
-        h1 { font-size: 46px; font-weight: 700; color: #1E2522; line-height: 1.2; margin-bottom: 24px; letter-spacing: -0.8px; }
-        p { color: #535F58; font-size: 16.5px; margin-bottom: 36px; }
-        .btn-go { background: #8F9D94; color: white; padding: 16px 32px; text-decoration: none; font-weight: 600; border-radius: 8px; display: inline-block; transition: all 0.3s ease; font-size: 15px; }
-        .btn-go:hover { background: #7C8B82; transform: translateY(-1px); }
-        .btn-sub { border: 1px solid #C8CFCB; color: #2C3531; padding: 16px 32px; text-decoration: none; font-weight: 600; border-radius: 8px; display: inline-block; font-size: 15px; margin-left: 16px; transition: all 0.3s ease; }
-        .btn-sub:hover { background: #F3F2EE; }
-        .pic-box { width: 100%; height: 450px; border-radius: 12px; overflow: hidden; box-shadow: 0 16px 36px rgba(0,0,0,0.02); border: 1px solid #E5E0D5; }
-        .pic { width: 100%; height: 100%; object-fit: cover; }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
 
-        /* Sections Grid */
-        .pad-sec { padding: 110px 0; }
-        .heading-center { text-align: center; max-width: 740px; margin: 0 auto 64px auto; }
-        .heading-center h2 { font-size: 34px; font-weight: 700; color: #1E2522; margin-bottom: 16px; letter-spacing: -0.5px; }
-        .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 32px; }
-        .box-card { background: white; padding: 50px 36px; border-radius: 12px; border: 1px solid #E5E0D5; transition: all 0.3s ease; }
-        .box-card:hover { transform: translateY(-3px); box-shadow: 0 166px 32px rgba(44,53,49,0.03); border-color: #D3DDD5; }
-        .box-card h3 { font-size: 21px; font-weight: 700; margin-bottom: 14px; color: #1E2522; }
-        .box-card p { font-size: 15px; color: #535F58; margin: 0; }
-        
-        .bg-w { background: white; border-top: 1px solid #E5E0D5; border-bottom: 1px solid #E5E0D5; }
-        .item-row { display: flex; gap: 24px; margin-bottom: 36px; }
-        .num-circle { width: 42px; height: 42px; background: #F6F4EE; color: #8F9D94; font-weight: 700; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 15px; border: 1px solid #E5E0D5; }
-        .item-text h4 { font-size: 19px; font-weight: 700; color: #1E2522; margin-bottom: 6px; }
-        .item-text p { font-size: 15px; color: #535F58; margin: 0; }
-        
-        .gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
-        .gallery-pic { width: 100%; height: 210px; object-fit: cover; border-radius: 8px; border: 1px solid #E5E0D5; }
-        
+        html {
+            scroll-behavior: smooth;
+            scroll-padding-top: 100px;
+        }
+
+        body {
+            background-color: #F6F4EE;
+            color: #2C3531;
+            line-height: 1.7;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        img {
+            display: block;
+            max-width: 100%;
+        }
+
+        .container {
+            max-width: 1140px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 0 28px;
+        }
+
+        /* Navigation */
+
+        nav {
+            background: #FAF9F5;
+            border-bottom: 1px solid #E5E0D5;
+            min-height: 90px;
+            display: flex;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .nav-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 24px;
+            width: 100%;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: 700;
+            text-decoration: none;
+            color: #2C3531;
+            letter-spacing: -0.5px;
+            flex-shrink: 0;
+        }
+
+        .logo span {
+            color: #8F9D94;
+            font-weight: 400;
+        }
+
+        .menu {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            flex-wrap: wrap;
+            gap: 14px 24px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color: #505B56;
+            font-size: 14px;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .menu a:hover {
+            color: #8F9D94;
+        }
+
+        .btn-nav {
+            background: #2C3531;
+            color: #FFFFFF !important;
+            padding: 12px 20px;
+            border-radius: 6px;
+            font-weight: 600 !important;
+        }
+
+        .btn-nav:hover {
+            background: #404B46;
+        }
+
+        /* Hero section */
+
+        header {
+            background: #FAF9F5;
+            padding: 100px 0;
+            border-bottom: 1px solid #E5E0D5;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+            gap: 64px;
+            align-items: center;
+        }
+
+        .lbl {
+            color: #75877B;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 14px;
+            display: inline-block;
+        }
+
+        h1 {
+            font-size: 46px;
+            font-weight: 700;
+            color: #1E2522;
+            line-height: 1.2;
+            margin-bottom: 24px;
+            letter-spacing: -0.8px;
+        }
+
+        p {
+            color: #535F58;
+            font-size: 16px;
+            margin-bottom: 30px;
+        }
+
+        .btn-go {
+            background: #8F9D94;
+            color: white;
+            padding: 16px 28px;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 8px;
+            display: inline-block;
+            transition: all 0.3s ease;
+            font-size: 14px;
+        }
+
+        .btn-go:hover {
+            background: #7C8B82;
+            transform: translateY(-1px);
+        }
+
+        .btn-sub {
+            border: 1px solid #C8CFCB;
+            color: #2C3531;
+            padding: 16px 28px;
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 8px;
+            display: inline-block;
+            font-size: 14px;
+            margin-left: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-sub:hover {
+            background: #F3F2EE;
+        }
+
+        .pic-box {
+            width: 100%;
+            height: 450px;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 16px 36px rgba(0, 0, 0, 0.04);
+            border: 1px solid #E5E0D5;
+            background: #EAE7DE;
+        }
+
+        .pic {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Section layouts */
+
+        .pad-sec {
+            padding: 100px 0;
+        }
+
+        .heading-center {
+            text-align: center;
+            max-width: 740px;
+            margin: 0 auto 60px;
+        }
+
+        .heading-center h2 {
+            font-size: 34px;
+            font-weight: 700;
+            color: #1E2522;
+            margin-bottom: 16px;
+            letter-spacing: -0.5px;
+            line-height: 1.3;
+        }
+
+        .heading-center p {
+            margin-bottom: 0;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 28px;
+        }
+
+        .box-card {
+            background: white;
+            padding: 42px 30px;
+            border-radius: 12px;
+            border: 1px solid #E5E0D5;
+            transition: all 0.3s ease;
+            min-width: 0;
+        }
+
+        .box-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 16px 32px rgba(44, 53, 49, 0.05);
+            border-color: #D3DDD5;
+        }
+
+        .box-card h3 {
+            font-size: 21px;
+            font-weight: 700;
+            margin-bottom: 14px;
+            color: #1E2522;
+            line-height: 1.4;
+        }
+
+        .box-card p {
+            font-size: 15px;
+            color: #535F58;
+            margin: 0;
+        }
+
+        .bg-w {
+            background: white;
+            border-top: 1px solid #E5E0D5;
+            border-bottom: 1px solid #E5E0D5;
+        }
+
+        .item-row {
+            display: flex;
+            align-items: flex-start;
+            gap: 24px;
+            margin-bottom: 32px;
+        }
+
+        .num-circle {
+            width: 42px;
+            height: 42px;
+            background: #F6F4EE;
+            color: #8F9D94;
+            font-weight: 700;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            font-size: 15px;
+            border: 1px solid #E5E0D5;
+        }
+
+        .item-text {
+            min-width: 0;
+        }
+
+        .item-text h4 {
+            font-size: 19px;
+            font-weight: 700;
+            color: #1E2522;
+            margin-bottom: 6px;
+            line-height: 1.4;
+        }
+
+        .item-text p {
+            font-size: 15px;
+            color: #535F58;
+            margin: 0;
+        }
+
+        /* Office gallery */
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 24px;
+            align-items: start;
+        }
+
+        .gallery-pic {
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 1px solid #E5E0D5;
+        }
+
         /* Footer */
-        footer { background: #2C3531; color: #A2AFA7; padding: 90px 0 40px 0; font-size: 14.5px; border-top: 1px solid #E5E0D5; }
-        .foot-grid { display: grid; grid-template-columns: 1.2fr 1fr 0.8fr; gap: 64px; border-bottom: 1px solid #3E4B45; padding-bottom: 50px; margin-bottom: 40px; }
-        .foot-col h4 { color: #FAF9F5; font-size: 16px; font-weight: 600; margin-bottom: 20px; }
-        .foot-col p { font-size: 14px; margin-bottom: 10px; }
-        
-        @media (max-w: 768px) { 
-            .grid-2, .grid-3, .foot-grid, .gallery { grid-template-columns: 1fr; gap: 40px; } 
-            .btn-sub { margin-left: 0; margin-top: 16px; display: block; text-align: center; } 
-            .hidden-m { display: none; } 
-            h1 { font-size: 34px; } 
-            .pad-sec { padding: 80px 0; }
-            header { padding: 80px 0; }
+
+        footer {
+            background: #2C3531;
+            color: #A2AFA7;
+            padding: 80px 0 36px;
+            font-size: 14px;
+            border-top: 1px solid #E5E0D5;
+        }
+
+        .foot-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr 0.8fr;
+            gap: 50px;
+            border-bottom: 1px solid #3E4B45;
+            padding-bottom: 42px;
+            margin-bottom: 32px;
+        }
+
+        .foot-col {
+            min-width: 0;
+        }
+
+        .foot-col h4 {
+            color: #FAF9F5;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .foot-col p {
+            color: #A3B9AE;
+            font-size: 14px;
+            margin-bottom: 10px;
+            overflow-wrap: anywhere;
+        }
+
+        .copyright {
+            text-align: center;
+            color: #A2AFA7;
+            font-size: 12px;
+            margin-bottom: 0;
+        }
+
+        /* Tablet */
+
+        @media (max-width: 900px) {
+            .container {
+                padding-left: 22px;
+                padding-right: 22px;
+            }
+
+            .grid-2 {
+                gap: 36px;
+            }
+
+            .menu {
+                gap: 12px 16px;
+            }
+
+            .menu a {
+                font-size: 13px;
+            }
+
+            h1 {
+                font-size: 38px;
+            }
+
+            .grid-3 {
+                gap: 18px;
+            }
+
+            .box-card {
+                padding: 30px 22px;
+            }
+
+            .foot-grid {
+                gap: 28px;
+            }
+        }
+
+        /* Mobile responsive layout */
+
+        @media (max-width: 768px) {
+            html {
+                scroll-padding-top: 20px;
+            }
+
+            .container {
+                padding-left: 20px;
+                padding-right: 20px;
+            }
+
+            nav {
+                min-height: 76px;
+                position: relative;
+            }
+
+            .nav-box {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 12px;
+                padding-top: 18px;
+                padding-bottom: 18px;
+            }
+
+            .logo {
+                font-size: 18px;
+            }
+
+            .menu {
+                width: 100%;
+                justify-content: flex-start;
+                gap: 10px 18px;
+            }
+
+            .menu a {
+                font-size: 13px;
+            }
+
+            .menu .btn-nav {
+                padding: 9px 14px;
+            }
+
+            header {
+                padding: 65px 0;
+            }
+
+            .grid-2,
+            .grid-3,
+            .foot-grid {
+                grid-template-columns: minmax(0, 1fr);
+                gap: 32px;
+            }
+
+            .grid-2 {
+                align-items: start;
+            }
+
+            h1 {
+                font-size: 36px;
+            }
+
+            .pad-sec {
+                padding: 65px 0;
+            }
+
+            .heading-center {
+                margin-bottom: 36px;
+            }
+
+            .heading-center h2 {
+                font-size: 30px;
+            }
+
+            .pic-box {
+                height: 340px;
+            }
+
+            .btn-go,
+            .btn-sub {
+                padding: 14px 20px;
+            }
+
+            .btn-sub {
+                margin-left: 8px;
+            }
+
+            .gallery {
+                gap: 16px;
+            }
+
+            .gallery-pic {
+                height: 240px;
+            }
+
+            footer {
+                padding: 60px 0 30px;
+            }
+
+            .foot-grid {
+                padding-bottom: 30px;
+                margin-bottom: 24px;
+            }
+        }
+
+        /* Small mobile phones */
+
+        @media (max-width: 480px) {
+            .container {
+                padding-left: 18px;
+                padding-right: 18px;
+            }
+
+            .logo {
+                font-size: 16px;
+            }
+
+            .menu {
+                gap: 10px 14px;
+            }
+
+            .menu a {
+                font-size: 12px;
+            }
+
+            h1 {
+                font-size: 31px;
+            }
+
+            p {
+                font-size: 15px;
+            }
+
+            .heading-center h2 {
+                font-size: 27px;
+            }
+
+            .pic-box {
+                height: 280px;
+            }
+
+            .hero-buttons {
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            .hero-buttons .btn-go,
+            .hero-buttons .btn-sub {
+                display: block;
+                width: 100%;
+                text-align: center;
+                margin: 0;
+            }
+
+            .box-card {
+                padding: 28px 22px;
+            }
+
+            .item-row {
+                gap: 14px;
+            }
+
+            .num-circle {
+                width: 38px;
+                height: 38px;
+                flex-basis: 38px;
+            }
+
+            .item-text h4 {
+                font-size: 17px;
+            }
+
+            .gallery {
+                grid-template-columns: minmax(0, 1fr);
+            }
+
+            .gallery-pic {
+                height: 210px;
+            }
         }
     </style>
 </head>
+
 <body>
 
+    <!-- Navigation -->
     <nav>
         <div class="container nav-box">
             <a href="#" class="logo">Dr. Maya Reynolds, <span>PsyD</span></a>
-            <div class="menu hidden-m">
+
+            <div class="menu">
                 <a href="#about">About Focus</a>
                 <a href="#specialties">Specialties</a>
                 <a href="#office">Our Office</a>
@@ -85,122 +605,243 @@
         </div>
     </nav>
 
+    <!-- Hero section -->
     <header>
         <div class="container grid-2">
+
             <div>
-                <span class="lbl">Clinical Psychologist • Santa Monica, CA</span>
-                <h1>Heal From Burnout & Reclaim Your Edge</h1>
-                <p>Specialized clinical therapy for high-achieving professionals, entrepreneurs, and creatives navigating intense anxiety, chronic stress, and trauma in California. Let’s build lasting nervous system resilience.</p>
-                <div>
+                <span class="lbl">Clinical Psychologist · Santa Monica, CA</span>
+
+                <h1>Heal From Burnout &amp; Reclaim Your Edge</h1>
+
+                <p>
+                    Specialized clinical therapy for high-achieving professionals,
+                    entrepreneurs, and creatives navigating intense anxiety,
+                    chronic stress, and trauma in California. Let’s build lasting
+                    nervous system resilience.
+                </p>
+
+                <div class="hero-buttons">
                     <a href="#contact" class="btn-go">Schedule Consultation</a>
                     <a href="#specialties" class="btn-sub">Explore Specialties</a>
                 </div>
             </div>
+
             <div class="pic-box">
-                <!-- Using direct root level path for office1.png -->
-                <img src="office1.png" alt="Luxury Therapy Sanctuary" class="pic">
+                <!-- Keep office1.png in the same folder as this HTML file. -->
+                <img src="office1.png"
+                     alt="Luxury Therapy Sanctuary"
+                     class="pic">
             </div>
+
         </div>
     </header>
 
+    <!-- About section -->
     <section id="about" class="pad-sec">
         <div class="container">
+
             <div class="heading-center">
                 <h2>Tailored Therapy for High-Functioning Adults</h2>
-                <p>You look completely successful and driven on the outside, but handle chronic exhaustion, isolation, and mental burnout on the inside.</p>
+
+                <p>
+                    You look completely successful and driven on the outside,
+                    but handle chronic exhaustion, isolation, and mental burnout
+                    on the inside.
+                </p>
             </div>
+
             <div class="grid-3">
+
                 <div class="box-card">
                     <h3>Corporate Leaders</h3>
-                    <p>Overcoming severe workplace burnout, over-functioning perfectionism, and the relentless stress to perform without losing your well-being.</p>
+                    <p>
+                        Overcoming severe workplace burnout, over-functioning
+                        perfectionism, and the relentless stress to perform
+                        without losing your well-being.
+                    </p>
                 </div>
+
                 <div class="box-card">
-                    <h3>Founders & Entrepreneurs</h3>
-                    <p>Navigating deeply isolating executive stress, daily decision fatigue, and high-stakes anxiety while scaling active business systems.</p>
+                    <h3>Founders &amp; Entrepreneurs</h3>
+                    <p>
+                        Navigating deeply isolating executive stress, daily
+                        decision fatigue, and high-stakes anxiety while scaling
+                        active business systems.
+                    </p>
                 </div>
+
                 <div class="box-card">
-                    <h3>Creatives & Innovators</h3>
-                    <p>Processing performance blocks, imposter syndrome, and hidden anxieties to reclaim your uninhibited creative drive and clarity.</p>
+                    <h3>Creatives &amp; Innovators</h3>
+                    <p>
+                        Processing performance blocks, imposter syndrome, and
+                        hidden anxieties to reclaim your uninhibited creative
+                        drive and clarity.
+                    </p>
                 </div>
+
             </div>
         </div>
     </section>
+
+    <!-- Specialties section -->
     <section id="specialties" class="pad-sec bg-w">
         <div class="container grid-2">
+
             <div class="pic-box" style="height: 480px;">
-                <!-- Using direct root level path for maya.png -->
-                <img src="maya.png" alt="Dr. Maya Reynolds" class="pic">
+                <!-- Keep maya.png in the same folder as this HTML file. -->
+                <img src="maya.png"
+                     alt="Dr. Maya Reynolds"
+                     class="pic">
             </div>
+
             <div>
                 <span class="lbl">Clinical Approach</span>
-                <h2 style="font-size: 34px; font-weight:700; margin-bottom: 30px; color:#1E2522; letter-spacing: -0.5px;">Evidence-Based Solutions for Lasting Recovery</h2>
+
+                <h2 style="font-size: 34px; font-weight: 700; margin-bottom: 30px; color: #1E2522; letter-spacing: -0.5px;">
+                    Evidence-Based Solutions for Lasting Recovery
+                </h2>
+
                 <div class="item-row">
                     <div class="num-circle">1</div>
+
                     <div class="item-text">
-                        <h4>Trauma Recovery & EMDR</h4>
-                        <p>Safely reprocess distressing life memories and physiological stress loops using advanced EMDR protocols to restore full emotional autonomy.</p>
+                        <h4>Trauma Recovery &amp; EMDR</h4>
+                        <p>
+                            Safely reprocess distressing life memories and
+                            physiological stress loops using advanced EMDR
+                            protocols to restore full emotional autonomy.
+                        </p>
                     </div>
                 </div>
+
                 <div class="item-row">
                     <div class="num-circle">2</div>
+
                     <div class="item-text">
                         <h4>Executive Burnout Blueprint</h4>
-                        <p>Establish strict, protective professional boundaries and implement realistic daily biological strategies to heal chronic nervous system fatigue.</p>
+                        <p>
+                            Establish strict, protective professional boundaries
+                            and implement realistic daily biological strategies
+                            to heal chronic nervous system fatigue.
+                        </p>
                     </div>
                 </div>
+
                 <div class="item-row">
                     <div class="num-circle">3</div>
+
                     <div class="item-text">
                         <h4>Anxiety Minimization (CBT)</h4>
-                        <p>Identify, restructure, and dismantle core perfectionist loops and racing cognitive patterns using actionable Cognitive Behavioral techniques.</p>
+                        <p>
+                            Identify, restructure, and dismantle core perfectionist
+                            loops and racing cognitive patterns using actionable
+                            Cognitive Behavioral techniques.
+                        </p>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <!-- NEW CUSTOM SECTION: OUR OFFICE (Part 3 Requirement) -->
+    <!-- Our Office section -->
     <section id="office" class="pad-sec">
         <div class="container grid-2">
+
             <div>
                 <span class="lbl">The Practice Space</span>
-                <h2 style="font-size: 34px; font-weight:700; margin-bottom: 20px; color:#1E2522; letter-spacing: -0.5px;">A Space Custom Tailored to Your Comfort</h2>
-                <p>Located privately in Santa Monica, California, our clinical environment is meticulously designed to foster an immediate feeling of grounding, ease, and total safety. Featuring soothing earth tones, acoustic privacy, and comfortable modern seating, every element calms your sensory system from the moment you step through our door.</p>
+
+                <h2 style="font-size: 34px; font-weight: 700; margin-bottom: 20px; color: #1E2522; letter-spacing: -0.5px;">
+                    A Space Custom Tailored to Your Comfort
+                </h2>
+
+                <p>
+                    Located privately in Santa Monica, California, our clinical
+                    environment is meticulously designed to foster an immediate
+                    feeling of grounding, ease, and total safety. Featuring
+                    soothing earth tones, acoustic privacy, and comfortable
+                    modern seating, every element calms your sensory system
+                    from the moment you step through our door.
+                </p>
+
                 <div style="font-size: 15px; font-weight: 500; color: #2D3632; margin-top: 24px; line-height: 2;">
-                    <p style="margin-bottom: 8px;">✨ Private suite with complete soundproof privacy</p>
-                    <p style="margin-bottom: 8px;">✨ Seamless in-person sessions and secure premium Telehealth options</p>
-                    <p>✨ Sensory elements explicitly curated to down-regulate stress</p>
+                    <p style="margin-bottom: 8px;">
+                        ✨ Private suite with complete soundproof privacy
+                    </p>
+
+                    <p style="margin-bottom: 8px;">
+                        ✨ Seamless in-person sessions and secure premium Telehealth options
+                    </p>
+
+                    <p style="margin-bottom: 8px;">
+                        ✨ Sensory elements explicitly curated to down-regulate stress
+                    </p>
                 </div>
             </div>
+
             <div class="gallery">
-                <!-- Using direct root level paths for office assets -->
-                <img src="office1.png" alt="Sanctuary Office Interior" class="gallery-pic" style="height: 220px; width: 100%; object-fit: cover;">
-                <img src="office2.png" alt="Sanctuary Seating Lounge" class="gallery-pic" style="height: 220px; width: 100%; object-fit: cover; margin-top: 24px;">
+                <!-- Keep office1.png and office2.png in the same folder as this HTML file. -->
+
+                <img src="office1.png"
+                     alt="Sanctuary Office Interior"
+                     class="gallery-pic">
+
+                <img src="office2.png"
+                     alt="Sanctuary Seating Lounge"
+                     class="gallery-pic">
             </div>
+
         </div>
     </section>
 
-    <!-- PREMIUM SOPHISTICATED FOOTER -->
+    <!-- Original footer -->
     <footer id="contact">
         <div class="container foot-grid">
+
             <div class="foot-col">
                 <h4>Dr. Maya Reynolds, PsyD</h4>
-                <p style="color: #A3B9AE;">Enabling ambitious professionals to resolve systemic stress and reclaim complete psychological balance through modern clinical care.</p>
+
+                <p style="color: #A3B9AE;">
+                    Enabling ambitious professionals to resolve systemic stress
+                    and reclaim complete psychological balance through modern
+                    clinical care.
+                </p>
             </div>
+
             <div class="foot-col">
-                <h4>Location & Contact</h4>
+                <h4>Location &amp; Contact</h4>
+
                 <p>📍 123th Street 45 W, Santa Monica, CA 90401</p>
-                <p style="margin-top: 8px;">✉️ contact@drmayareynolds.com</p>
+
+                <p style="margin-top: 8px;">
+                    ✉️ contact@drmayareynolds.com
+                </p>
             </div>
+
             <div class="foot-col">
                 <h4>Practice Dynamics</h4>
+
                 <p>• Premium In-Person (Santa Monica)</p>
-                <p style="margin-top: 8px;">• High-Security Telehealth (All CA)</p>
+
+                <p style="margin-top: 8px;">
+                    • High-Security Telehealth (All CA)
+                </p>
             </div>
+
         </div>
-        <div class="container" style="text-align: center; color: #697872; font-size: 13px; font-weight: 500;">
-            <p>&copy; 2026 Dr. Maya Reynolds. All rights reserved. Designed to replicate Conejo Valley Layout Structure for GrowMyTherapy Evaluation Milestone.</p>
+
+        <div class="container">
+            <p class="copyright">
+                &copy; 2026 Dr. Maya Reynolds. All rights reserved.
+                Designed to replicate Conejo Valley Layout Structure
+                for GrowMyTherapy Evaluation Milestone.
+            </p>
         </div>
     </footer>
+
 </body>
 </html>
+
+
+ 
