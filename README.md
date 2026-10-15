@@ -10,10 +10,10 @@ This repository features a precise structural clone and an ultra-premium luxury 
 ## 🎨 Theme & Color Palette Implementation
 To replace the ocean-based blue tones of the reference website, a curated **Luxury Environmental & Sensory Regulation Palette** has been coded:
 - **Primary Background Elements:** Soft Organic Beige (`#F6F4EE` / `#FAF9F5`) to immediately promote grounding.
-- **Typography & Core Structuring:** Deep Charcoal/Slate Green (`#2C3531`) ensuring robust readability and high contrast.
-- **Accents & Navigation Highlights:** Muted Sage Gray (`#8F9D94`) to emphasize interactive components elegantly.
+- **Typography & Core Structuring:** Deep Charcoal/Muted Slate (`#2C3531` / `#1E2522`) ensuring robust readability and high contrast.
+- **Accents & Navigation Highlights:** Muted Green/Slate (`#8F9D94`) to emphasize interactive components elegantly.
 
-## ✍ McKay Copywriting & SEO Strategy
+## ✍️ Copywriting & SEO Strategy
 - **Localized Authority Hooks:** Embedded geographic markers ("Santa Monica, CA", "California") within the main `H1` and body fields to secure search optimization.
 - **Target Audience Structuring:** Content tailored specifically for high-achieving professionals dealing with severe workplace burnout and chronic nervous system exhaustion.
 - **Three Core Modalities Detailed:** Explicit documentation of Trauma/EMDR, Executive Burnout Blueprints, and Anxiety Minimization using Cognitive Behavioral Therapy (CBT).
@@ -22,10 +22,10 @@ To replace the ocean-based blue tones of the reference website, a curated **Luxu
 A completely unique, dedicated sanctuary grid module titled **"The Practice Space"** has been added right above the footer interface.
 - Highlights sensory elements, extreme soundproof confidentiality, and premium comfort.
 - Emphasizes flexible delivery options (in-person clinical visits and secure Telehealth availability for all California residents).
-- Integrated with an adaptive dual-column layout tailored for luxury office spaces.
+- Integrated with adaptive responsive layouts utilizing dynamic external image streams (`picsum.photos`) for high-uptime delivery.
 
 ## 💻 Tech Stack
 - Semantic HTML5 Layouts
 - High-Performance Embedded CSS Engines
-- Premium Digital Assets (Unsplash Global Infrastructure integration)
+- Premium Digital Assets (Picsum Global Infrastructure integration)
 
