@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Maya Reynolds, PsyD | Anxiety & Burnout Therapist Santa Monica</title>
+    <link href="https://googleapis.com" rel="stylesheet">
+    <style>
+        /* BALANCED PROFESSIONAL BEIGE & MUTED SLATE PALETTE */
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Plus Jakarta Sans', sans-serif; }
+        html { scroll-behavior: smooth; }
+        body { background-color: #F6F4EE; color: #2C3531; line-height: 1.7; -webkit-font-smoothing: antialiased; }
+        
+        .container { max-width: 1140px; margin: 0 auto; padding: 0 28px; width: 100%; }
+        
+        /* Floating Navbar */
+        nav { background: #FAF9F5; border-bottom: 1px solid #E5E0D5; height: 90px; display: flex; align-items: center; position: sticky; top: 0; z-index: 100; }
+        .nav-box { display: flex; justify-content: space-between; align-items: center; width: 100%; }
+        .logo { font-size: 20px; font-weight: 700; text-decoration: none; color: #2C3531; letter-spacing: -0.5px; }
+        .logo span { color: #8F9D94; font-weight: 400; }
+        .menu a { text-decoration: none; color: #505B56; margin-left: 32px; font-size: 15px; font-weight: 500; transition: all 0.3s ease; }
+        .menu a:hover { color: #8F9D94; }
+        .btn-nav { background: #2C3531; color: #ffffff !important; padding: 12px 24px; border-radius: 6px; font-weight: 600; font-size: 14.5px; }
+        .btn-nav:hover { background: #404B46; }
+
+        /* Hero Module */
+        header { background: #FAF9F5; padding: 110px 0; border-bottom: 1px solid #E5E0D5; }
+        .grid-2 { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 64px; align-items: center; }
+        .lbl { color: #8F9D94; font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 14px; display: inline-block; }
+        h1 { font-size: 46px; font-weight: 700; color: #1E2522; line-height: 1.2; margin-bottom: 24px; letter-spacing: -0.8px; }
+        p { color: #535F58; font-size: 16.5px; margin-bottom: 36px; }
+        .btn-go { background: #8F9D94; color: white; padding: 16px 32px; text-decoration: none; font-weight: 600; border-radius: 6px; display: inline-block; transition: all 0.3s ease; font-size: 15px; }
+        .btn-go:hover { background: #7C8B82; transform: translateY(-1px); }
+        .btn-sub { border: 1px solid #C8CFCB; color: #2C3531; padding: 16px 32px; text-decoration: none; font-weight: 600; border-radius: 6px; display: inline-block; font-size: 15px; margin-left: 16px; transition: all 0.3s ease; }
+        .btn-sub:hover { background: #F3F2EE; }
+        .pic-box { width: 100%; height: 450px; border-radius: 12px; overflow: hidden; box-shadow: 0 16px 36px rgba(0,0,0,0.02); border: 1px solid #E5E0D5; }
+        .pic { width: 100%; height: 100%; object-fit: cover; }
+
+        /* Sections Grid */
+        .pad-sec { padding: 110px 0; }
+        .heading-center { text-align: center; max-width: 740px; margin: 0 auto 64px auto; }
+        .heading-center h2 { font-size: 34px; font-weight: 700; color: #1E2522; margin-bottom: 16px; letter-spacing: -0.5px; }
+        .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 32px; }
+        .box-card { background: white; padding: 50px 36px; border-radius: 12px; border: 1px solid #E5E0D5; transition: all 0.3s ease; }
+        .box-card:hover { transform: translateY(-3px); box-shadow: 0 16px 32px rgba(44,53,49,0.03); border-color: #D3DDD5; }
+        .box-card h3 { font-size: 21px; font-weight: 700; margin-bottom: 14px; color: #1E2522; }
+        .box-card p { font-size: 15px; color: #535F58; margin: 0; }
+        
+        .bg-w { background: white; border-top: 1px solid #E5E0D5; border-bottom: 1px solid #E5E0D5; }
+        .item-row { display: flex; gap: 24px; margin-bottom: 36px; }
+        .num-circle { width: 42px; height: 42px; background: #F6F4EE; color: #8F9D94; font-weight: 700; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-shrink: 0; font-size: 15px; border: 1px solid #E5E0D5; }
+        .item-text h4 { font-size: 19px; font-weight: 700; color: #1E2522; margin-bottom: 6px; }
+        .item-text p { font-size: 15px; color: #535F58; margin: 0; }
+        
+        .gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+        .gallery-pic { width: 100%; height: 210px; object-fit: cover; border-radius: 8px; border: 1px solid #E5E0D5; }
+        
+        /* Footer */
+        footer { background: #2C3531; color: #A2AFA7; padding: 90px 0 40px 0; font-size: 14.5px; border-top: 1px solid #E5E0D5; }
+        .foot-grid { display: grid; grid-template-columns: 1.2fr 1fr 0.8fr; gap: 64px; border-bottom: 1px solid #3E4B45; padding-bottom: 50px; margin-bottom: 40px; }
+        .foot-col h4 { color: #FAF9F5; font-size: 16px; font-weight: 600; margin-bottom: 20px; }
+        .foot-col p { font-size: 14px; margin-bottom: 10px; }
+        
+        @media (max-w: 768px) { 
+            .grid-2, .grid-3, .foot-grid, .gallery { grid-template-columns: 1fr; gap: 40px; } 
+            .btn-sub { margin-left: 0; margin-top: 16px; display: block; text-align: center; } 
+            .hidden-m { display: none; } 
+            h1 { font-size: 34px; } 
+            .pad-sec { padding: 80px 0; }
+            header { padding: 80px 0; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="container nav-box">
+            <a href="#" class="logo">Dr. Maya Reynolds, <span>PsyD</span></a>
+            <div class="menu hidden-m">
+                <a href="#about">About Focus</a>
+                <a href="#specialties">Specialties</a>
+                <a href="#office">Our Office</a>
+                <a href="#contact" class="btn-nav">Book Appointment</a>
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <div class="container grid-2">
+            <div>
+                <span class="lbl">Clinical Psychologist • Santa Monica, CA</span>
+                <h1>Heal From Burnout & Reclaim Your Edge</h1>
+                <p>Specialized clinical therapy for high-achieving professionals, entrepreneurs, and creatives navigating intense anxiety, chronic stress, and trauma in California. Let’s build lasting nervous system resilience.</p>
+                <div>
+                    <a href="#contact" class="btn-go">Schedule Consultation</a>
+                    <a href="#specialties" class="btn-sub">Explore Specialties</a>
+                </div>
+            </div>
+            <div class="pic-box">
+                <img src="https://unsplash.com" alt="Luxury Therapy Sanctuary" class="pic">
+            </div>
+        </div>
+    </header>
+
+    <section id="about" class="pad-sec">
+        <div class="container">
+            <div class="heading-center">
+                <h2>Tailored Therapy for High-Functioning Adults</h2>
+                <p>You look completely successful and driven on the outside, but handle chronic exhaustion, isolation, and mental burnout on the inside.</p>
+            </div>
+            <div class="grid-3">
+                <div class="box-card">
+                    <h3>Corporate Leaders</h3>
+                    <p>Overcoming severe workplace burnout, over-functioning perfectionism, and the relentless stress to perform without losing your well-being.</p>
+                </div>
+                <div class="box-card">
+                    <h3>Founders & Entrepreneurs</h3>
+                    <p>Navigating deeply isolating executive stress, daily decision fatigue, and high-stakes anxiety while scaling active business systems.</p>
+                </div>
+                <div class="box-card">
+                    <h3>Creatives & Innovators</h3>
+                    <p>Processing performance blocks, imposter syndrome, and hidden anxieties to reclaim your uninhibited creative drive and clarity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="specialties" class="pad-sec bg-w">
+        <div class="container grid-2">
+            <div class="pic-box" style="height: 480px;">
+                <img src="https://unsplash.com" alt="Dr. Maya Reynolds" class="pic">
+            </div>
+            <div>
+                <span class="lbl">Clinical Approach</span>
+                <h2 style="font-size: 34px; font-weight:700; margin-bottom: 30px; color:#1E2522; letter-spacing: -0.5px;">Evidence-Based Solutions for Lasting Recovery</h2>
+                <div class="item-row">
+                    <div class="num-circle">1</div>
+                    <div class="item-text">
+                        <h4>Trauma Recovery & EMDR</h4>
+                        <p>Safely reprocess distressing life memories and physiological stress loops using advanced EMDR protocols to restore full emotional autonomy.</p>
+                    </div>
+                </div>
+                <div class="item-row">
+                    <div class="num-circle">2</div>
+                    <div class="item-text">
+                        <h4>Executive Burnout Blueprint</h4>
+                        <p>Establish strict, protective professional boundaries and implement realistic daily biological strategies to heal chronic nervous system fatigue.</p>
+                    </div>
+                </div>
+                <div class="item-row">
+                    <div class="num-circle">3</div>
+                    <div class="item-text">
+                        <h4>Anxiety Minimization (CBT)</h4>
+                        <p>Identify, restructure, and dismantle core perfectionist loops and racing cognitive patterns using actionable Cognitive Behavioral techniques.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="office" class="pad-sec">
+        <div class="container grid-2">
+            <div>
+                <span class="lbl">The Practice Space</span>
+                <h2 style="font-size: 34px; font-weight:700; margin-bottom: 20px; color:#1E2522; letter-spacing: -0.5px;">A Space Custom Tailored to Your Comfort</h2>
+                <p>Located privately in Santa Monica, California, our clinical environment is meticulously designed to foster an immediate feeling of grounding, ease, and total safety. Featuring soothing earth tones, acoustic privacy, and comfortable modern seating, every element calms your sensory system from the moment you step through our door.</p>
+                <div style="font-size: 15px; font-weight: 500; color: #2D3632; margin-top: 24px; line-height: 2;">
+                    <p style="margin-bottom: 8px;">✨ Private suite with complete soundproof privacy</p>
+                    <p style="margin-bottom: 8px;">✨ Seamless in-person sessions and secure premium Telehealth options</p>
+                    <p>✨ Sensory elements explicitly curated to down-regulate stress</p>
+                </div>
+            </div>
+            <div class="gallery">
+                <img src="https://unsplash.com" alt="Sanctuary Office Interior" class="gallery-pic">
+                <img src="https://unsplash.com" alt="Sanctuary Seating Lounge" class="gallery-pic" style="margin-top: 24px;">
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="container foot-grid">
+            <div class="foot-col">
+                <h4>Dr. Maya Reynolds, PsyD</h4>
+                <p style="color: #A3B9AE;">Enabling ambitious professionals to resolve systemic stress and reclaim complete psychological balance through modern clinical care.</p>
+            </div>
+            <div class="foot-col">
+                <h4>Location & Contact</h4>
+                <p>📍 123th Street 45 W, Santa Monica, CA 90401</p>
+                <p style="margin-top: 8px;">✉️ contact@drmayareynolds.com</p>
+            </div>
+            <div class="foot-col">
+                <h4>Practice Dynamics</h4>
+                <p>• Premium In-Person (Santa Monica)</p>
+                <p style="margin-top: 8px;">• High-Security Telehealth (All CA)</p>
+            </div>
+        </div>
+        <div class="container" style="text-align: center; color: #697872; font-size: 13px; font-weight: 500;">
+            <p>&copy; 2026 Dr. Maya Reynolds. All rights reserved. Designed to replicate Conejo Valley Layout Structure for GrowMyTherapy Evaluation Milestone.</p>
+        </div>
+    </footer>
+</body>
+</html>
