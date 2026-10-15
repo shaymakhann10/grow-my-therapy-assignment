@@ -29,9 +29,9 @@
         .lbl { color: #8F9D94; font-size: 12px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 14px; display: inline-block; }
         h1 { font-size: 46px; font-weight: 700; color: #1E2522; line-height: 1.2; margin-bottom: 24px; letter-spacing: -0.8px; }
         p { color: #535F58; font-size: 16.5px; margin-bottom: 36px; }
-        .btn-go { background: #8F9D94; color: white; padding: 16px 32px; text-decoration: none; font-weight: 600; border-radius: 6px; display: inline-block; transition: all 0.3s ease; font-size: 15px; }
+        .btn-go { background: #8F9D94; color: white; padding: 16px 32px; text-decoration: none; font-weight: 600; border-radius: 8px; display: inline-block; transition: all 0.3s ease; font-size: 15px; }
         .btn-go:hover { background: #7C8B82; transform: translateY(-1px); }
-        .btn-sub { border: 1px solid #C8CFCB; color: #2C3531; padding: 16px 32px; text-decoration: none; font-weight: 600; border-radius: 6px; display: inline-block; font-size: 15px; margin-left: 16px; transition: all 0.3s ease; }
+        .btn-sub { border: 1px solid #C8CFCB; color: #2C3531; padding: 16px 32px; text-decoration: none; font-weight: 600; border-radius: 8px; display: inline-block; font-size: 15px; margin-left: 16px; transition: all 0.3s ease; }
         .btn-sub:hover { background: #F3F2EE; }
         .pic-box { width: 100%; height: 450px; border-radius: 12px; overflow: hidden; box-shadow: 0 16px 36px rgba(0,0,0,0.02); border: 1px solid #E5E0D5; }
         .pic { width: 100%; height: 100%; object-fit: cover; }
@@ -42,7 +42,7 @@
         .heading-center h2 { font-size: 34px; font-weight: 700; color: #1E2522; margin-bottom: 16px; letter-spacing: -0.5px; }
         .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 32px; }
         .box-card { background: white; padding: 50px 36px; border-radius: 12px; border: 1px solid #E5E0D5; transition: all 0.3s ease; }
-        .box-card:hover { transform: translateY(-3px); box-shadow: 0 16px 32px rgba(44,53,49,0.03); border-color: #D3DDD5; }
+        .box-card:hover { transform: translateY(-3px); box-shadow: 0 166px 32px rgba(44,53,49,0.03); border-color: #D3DDD5; }
         .box-card h3 { font-size: 21px; font-weight: 700; margin-bottom: 14px; color: #1E2522; }
         .box-card p { font-size: 15px; color: #535F58; margin: 0; }
         
@@ -97,8 +97,8 @@
                 </div>
             </div>
             <div class="pic-box">
-                <!-- Using office1.png for the main landscape Hero feature banner -->
-                <img src="images/office1.png" alt="Luxury Therapy Sanctuary" class="pic">
+                <!-- Using direct root level path for office1.png -->
+                <img src="office1.png" alt="Luxury Therapy Sanctuary" class="pic">
             </div>
         </div>
     </header>
@@ -128,8 +128,8 @@
     <section id="specialties" class="pad-sec bg-w">
         <div class="container grid-2">
             <div class="pic-box" style="height: 480px;">
-                <!-- Fixed path target point for Dr. Maya Headshot profile image file -->
-                <img src="images/maya.png" alt="Dr. Maya Reynolds" class="pic">
+                <!-- Using direct root level path for maya.png -->
+                <img src="maya.png" alt="Dr. Maya Reynolds" class="pic">
             </div>
             <div>
                 <span class="lbl">Clinical Approach</span>
@@ -173,9 +173,9 @@
                 </div>
             </div>
             <div class="gallery">
-                <!-- Mapped specifically to responsive .png file assets -->
-                <img src="images/office1.png" alt="Sanctuary Office Interior" class="gallery-pic" style="height: 220px; width: 100%; object-fit: cover;">
-                <img src="images/office2.png" alt="Sanctuary Seating Lounge" class="gallery-pic" style="height: 220px; width: 100%; object-fit: cover; margin-top: 24px;">
+                <!-- Using direct root level paths for office assets -->
+                <img src="office1.png" alt="Sanctuary Office Interior" class="gallery-pic" style="height: 220px; width: 100%; object-fit: cover;">
+                <img src="office2.png" alt="Sanctuary Seating Lounge" class="gallery-pic" style="height: 220px; width: 100%; object-fit: cover; margin-top: 24px;">
             </div>
         </div>
     </section>
@@ -204,4 +204,3 @@
     </footer>
 </body>
 </html>
-
